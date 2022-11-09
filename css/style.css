@@ -1,0 +1,25 @@
+body {
+  background: linear-gradient(180deg, rgba(40, 100, 255, 0.37) 0%, rgba(255, 255, 255, 0) 100%);
+  margin: 1, 5em;
+  font-size: 36px;
+  font-family: "Roboto";
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+.logo {
+  position: absolute;
+  left: 18px;
+  top: 52px;
+  width: 130px;
+  height: 140px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}

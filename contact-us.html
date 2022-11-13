@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Let`s play games together" />
-        <title>Game Hup / Home</title>
+        <meta name="description" content="Contact us" />
+        <title>Game Hup / Contact us</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -14,9 +14,9 @@
             <nav>
                 <ul class="nav-links">
                     <li class="nav-link"><a href="index.html">Home</a></li>
-                    <li class="nav-link"><a href="">Games</a></li>
-                    <li class="nav-link"><a href="">about us</a></li>
-                    <li class="nav-link"><a href="contact us.html">contact us</a></li>
+                    <li class="nav-link"><a href="games.html">Games</a></li>
+                    <li class="nav-link"><a href="about-us.html">About us</a></li>
+                    <li class="nav-link"><a href="contact-us.html">Contact us</a></li>
                 </ul>
             </nav>
             <div class="hero-image"> 
@@ -24,4 +24,24 @@
             </div>
         </div>
     </body>
+    <main class="contact">
+        <h1>Contact us</h1>
+        <form method="post">
+            <div class="form-wrapper">
+                <section>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    <label for="order-number">Order number</label>
+                    <input type="order-number" id="order-number" name="order number">
+                </section>
+                <section>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </section>
+            </div>
+            <input type="submit" value="Send Now" class="cta" />
+        </form>
+    </main>
 </html>

@@ -5,10 +5,9 @@
   
 }
 body {
-  background: rgb(38, 76, 89);
-  margin: 1, 5em;
+  
   font-size: 36px;
-  font-family: "Roboto" sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
 
@@ -23,29 +22,32 @@ a {
   height: 150px;
 }
 .container {
-
+  min-width: 100% ;
   margin: 0 auto;
   display: flex;
-  height: 100vh;
+  overflow: hidden;
 }
+
 .aside {
-  width: 30vw;
-  height: 100%;
+  background: rgb(38, 76, 89);
   display:flex;
   flex-direction: column-reverse;
+  min-width: 20%;
   align-items: center;
   justify-content: left;
   border-right: 2px solid black;
 
 }
+
+
 .logo {
 margin-top: 3rem;
 
 
 }
 .logo-img {
-  width: 300px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
 }
 .nav-links {
 
@@ -56,15 +58,20 @@ margin-top: 3rem;
   justify-content:space-around;
   padding-left: 0;
   color: #fff;
-  height: 70vh;
+  gap: 2rem; 
+
+
 }
+
 .nav-link a {
   color: rgb(255, 255, 255);
-  font-size: 3rem;
-  padding: 1rem;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  text-transform: uppercase;
   
 }
 .hero-aside{
+  min-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,7 +81,6 @@ margin-top: 3rem;
   padding: 15em;
   mix-blend-mode: lighten;
   color: white;
-
 }
 .hero-aside h1 {
 font-size: 4rem;
@@ -125,18 +131,146 @@ input, select, textarea {
 
 .games-list {
   display: grid;
-  grid-template-columns: repeat(3,  1fr);
+  grid-template-columns: repeat(1,  1fr);
   gap: 40px;
 }
 
 .game img {
-  width: 100%;
+  width: 70%;
+}
+
+.game {
+  padding: 20px;
+}
+
+.about-us {
+  
 }
 
 .info {
+  margin: auto;
   max-width: 1000px;
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
   line-height: 64px;
+  
+}
+
+/* media queries */
+@media only screen and (max-width: 600px) {
+.container {
+    display:flex;
+    flex-direction: column;
+    width: 96vw;
+    margin: 0 auto;
+  }
+  .nav-links {
+    gap: .6rem;
+    margin-top:2rem;
+  }
+  .logo-img {
+    width: 100px;
+    height: 100px;
+  }
+  .nav-link a {
+    font-size: 1rem;
+   
+  }
+  .aside {
+    height: 70vh;
+    width: 100%;
+      border-right: none;
+     
+        justify-content: center;
+
+  }
+  .hero-aside {
+    max-width: 100%;
+    height: 350px;
+    padding: 1rem;
+  }
+  .hero-aside h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+  font-size: 2rem;
+  text-align: left;
+  padding: 1rem;
+  }
+  p {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .form-wrapper {
+    font-size: 1rem;
+    flex-direction: column;
+  }
+  .cta {
+    font-size: 1rem;
+  }
+  .games-list {
+    background: lightgray;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .container {
+    display:flex;
+    flex-direction: column;
+    width: 96vw;
+    margin: 0 auto;
+
+  }
+  .logo-img {
+    width: 150px;
+    height: 150px;
+  }
+  .nav-link a {
+    font-size: 1.3rem;
+  }
+  .aside {
+    height: 70vh;
+    width: 100%;
+   align-items: left;
+  justify-content: left;
+  }
+
+  .hero-aside {
+    max-width: 100%;
+    height: 350px;
+    padding: 1rem;
+  }
+  .hero-aside h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+  font-size: 2rem;
+  text-align: left;
+  padding: 1rem;
+  }
+  p {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .form-wrapper {
+    font-size: 1rem;
+    flex-direction: column;
+  }
+  .cta {
+    font-size: 1rem;
+  }
+  .games-list {
+    grid-template-columns: 1fr 1fr;
+    background: lightgray;
+    padding: 10px;
+  }
+}
+@media (min-width: 901px) and (max-width: 1140px) {
+  .aside {
+    height: 100vh;
+    min-width: 30%;
+   
+  }
 }
